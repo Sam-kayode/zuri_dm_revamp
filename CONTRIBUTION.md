@@ -8,7 +8,7 @@ When contributing to the project, please follow these guidelines:
 
 #### Please note, the above guideline is a prequisite for this project.
 
-### Contributing to the project
+## Contributing to the project
 
 1.  Fork the repository on [GitHub](https://github.com/Delight-Fela-Steve/zuri_dm_revamp/fork)
 2.  Clone the repository on your local machine `git clone https://github.com/Delight-Fela-Steve/zuri_dm_revamp/`
