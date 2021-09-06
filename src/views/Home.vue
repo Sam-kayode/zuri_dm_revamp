@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="home d-flex flex-column">
+        <ThreadReplySidebar />
+        <ThreadCalender />
+
+        <b-button
+            class="button"
+            v-b-toggle.sidebar
+            variant="success"
+            size="sm"
+            pb="2"
+        >
+            <b-icon icon="reply" aria-hidden="true"></b-icon>
+        </b-button>
+        <ScheduleMessageModal />
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ThreadCalender from '@/components/threadCalender.vue';
+import ScheduleMessageModal from '@/components/scheduleMessageModal.vue';
+import ThreadReplySidebar from '@/components/threadReplySidebar.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+    name: 'Home',
+    components: {
+        ThreadCalender,
+        ScheduleMessageModal,
+        ThreadReplySidebar,
+    },
+};
 </script>
+
+<style></style>
