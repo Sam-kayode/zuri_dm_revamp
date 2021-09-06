@@ -18,7 +18,7 @@
 // @ is an alias to /src
 import ThreadCalender from '@/components/threadCalender.vue'
 import ScheduleMessageModal from '@/components/scheduleMessageModal.vue'
-import ThreadReply from '@/components/threadRepply.vue'
+import ThreadReply from '@/components/threadReply.vue'
 
 export default {
   name: 'Home',
