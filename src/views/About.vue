@@ -1,25 +1,11 @@
-
-
 <template>
-<main>
-  <Messageinput />
     <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</main>
+        <h1>This is an about page</h1>
+    </div>
 </template>
 
 <script>
-
-import Messageinput from '../components/Messageinput';
-
-export default {
-  components: {
-    Messageinput
-  }
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>
