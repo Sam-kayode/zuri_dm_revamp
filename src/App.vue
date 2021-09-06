@@ -1,5 +1,6 @@
 <template>
-    <div id="app">
+  <div id="app">
+    <searchbar></searchbar>
         <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,16 @@
         <router-view />
     </div>
 </template>
+
+<script>
+import searchbar from './components/searchbar.vue'
+export default {
+  name: 'app',
+  components: {
+    searchbar
+  }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
