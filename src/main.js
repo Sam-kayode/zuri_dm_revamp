@@ -14,13 +14,8 @@ Vue.use(BootstrapVueIcons);
 Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false;
-
- 
-import input from './components/inputBox.vue'
 import profileContainer from './components/profileContainer.vue'
 Vue.component('profile-container', profileContainer);
-Vue.component('input-box', input)
-
 new Vue({
     router,
     store,

@@ -81,12 +81,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
-* {
-   font-family:'Lato', sans-serif;
-}
     .primaryColor{
        background-color:#00B87C;
     }

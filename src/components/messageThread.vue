@@ -11,8 +11,10 @@
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
-                        commodi deleniti odit rerum ratione consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Tincidunt adipiscing et, tortor, fusce quis tellus, enim. A, posuere mi auctor odio tincidunt magnis.
+                        commodi deleniti odit rerum ratione consectetur. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tincidunt adipiscing et, tortor, fusce quis tellus,
+                        enim. A, posuere mi auctor odio tincidunt magnis.
                     </p>
                 </div>
             </div>
@@ -27,8 +29,10 @@
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
-                        commodi deleniti odit rerum ratione consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Tincidunt adipiscing et, tortor, fusce quis tellus, enim. A, posuere mi auctor odio tincidunt magnis.
+                        commodi deleniti odit rerum ratione consectetur. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tincidunt adipiscing et, tortor, fusce quis tellus,
+                        enim. A, posuere mi auctor odio tincidunt magnis.
                     </p>
                 </div>
             </div>
@@ -43,8 +47,10 @@
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
-                        commodi deleniti odit rerum ratione consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Tincidunt adipiscing et, tortor, fusce quis tellus, enim. A, posuere mi auctor odio tincidunt magnis.
+                        commodi deleniti odit rerum ratione consectetur. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tincidunt adipiscing et, tortor, fusce quis tellus,
+                        enim. A, posuere mi auctor odio tincidunt magnis.
                     </p>
                 </div>
             </div>
@@ -59,8 +65,10 @@
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
-                        commodi deleniti odit rerum ratione consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Tincidunt adipiscing et, tortor, fusce quis tellus, enim. A, posuere mi auctor odio tincidunt magnis.
+                        commodi deleniti odit rerum ratione consectetur. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tincidunt adipiscing et, tortor, fusce quis tellus,
+                        enim. A, posuere mi auctor odio tincidunt magnis.
                     </p>
                 </div>
             </div>
@@ -75,8 +83,10 @@
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
-                        commodi deleniti odit rerum ratione consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Tincidunt adipiscing et, tortor, fusce quis tellus, enim. A, posuere mi auctor odio tincidunt magnis.
+                        commodi deleniti odit rerum ratione consectetur. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tincidunt adipiscing et, tortor, fusce quis tellus,
+                        enim. A, posuere mi auctor odio tincidunt magnis.
                     </p>
                 </div>
             </div>
@@ -85,14 +95,14 @@
 </template>
 
 <script>
-export default{
-    name: 'messsage',
-    data(){
-        return{
-            width:window.innerWidth,
-        }
-    }
-}
+export default {
+    name: 'DmMesssageThread',
+    data() {
+        return {
+            width: window.innerWidth,
+        };
+    },
+};
 </script>
 
 <style scoped>
@@ -107,9 +117,7 @@ export default{
     padding: 0px;
     box-sizing: border-box;
     background-color: whitesmoke;
-    
 }
-
 
 .msgBody {
     padding-top: 50px;
@@ -142,7 +150,6 @@ export default{
     font-weight: 150;
     font-size: 14px;
 }
-
 
 .thread input {
     margin: 0px 15px;
