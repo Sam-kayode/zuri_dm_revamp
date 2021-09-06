@@ -10,7 +10,7 @@
             align-items-center
             rounded-top
             py-2
-            px-2
+            px-3
           "
           style="background: #00B87C"
         >
@@ -23,7 +23,7 @@
             ></b-icon>
           </p>
         </div>
-        <div class="body pt-4 px-2">
+        <div class="body pt-4 px-3">
           <div class="thread d-flex">
             <div class="thread-creator-image">
               <img :src="require('@/assets/woman.png')" alt="" />
@@ -54,7 +54,7 @@
           <div class="thread-replies">
             <b-list-group>
               <div
-                class="thread-reply d-flex mb-3"
+                class="thread-reply d-flex mb-2"
                 v-for="(replies, i) in thread_replies"
                 :key="i"
               >
@@ -170,7 +170,6 @@ export default {
   text-align: left !important;
 }
 .sidebar-header-title {
-  font-size: 21px;
   color: #fff;
 }
 .date-divider {
@@ -186,7 +185,7 @@ export default {
 .thread-details p,
 .thread-replies span.time,
 .thread-replies p {
-  font-size: 11px;
+  font-size: 0.8rem;
   color: rgba(153, 153, 153, 1);
   font-weight: 400;
   text-align: left !important;
@@ -195,10 +194,10 @@ export default {
 .thread-replies p {
   color: rgba(36, 36, 36, 1);
   line-height: 18px;
+  letter-spacing: 1px;
 }
 .thread-details span.name,
 .thread-replies span.name {
-  font-size: 15px;
   font-weight: 600;
   color: rgba(36, 36, 36, 1);
   margin-right: 20px;
@@ -219,7 +218,6 @@ export default {
   padding-top: 15px;
 }
 .text-field textarea.form-control::placeholder {
-  font-size: 15px;
   font-weight: 400;
   color: rgba(190, 190, 190, 1);
 }

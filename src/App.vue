@@ -1,4 +1,5 @@
 <template>
+<div>
     <input-box/>
     <searchbar></searchbar>
     <messageThread></messageThread>
