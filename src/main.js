@@ -1,23 +1,24 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-import ThreeDots from "@/components/ThreeDots.vue";
 
-import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import input from './components/inputBox.vue'
 
-// Import Bootstrap an BootstrapVue CSS files (order is important)
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import { BootstrapVueIcons, BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 
-// Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
+Vue.use(BootstrapVueIcons);
+Vue.use(IconsPlugin);
 
-Vue.component("ThreeDots", ThreeDots);
 Vue.config.productionTip = false;
 
+Vue.component('input-box', input)
+
 new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount("#app");
+    router,
+    store,
+    render: (h) => h(App),
+}).$mount('#app');
