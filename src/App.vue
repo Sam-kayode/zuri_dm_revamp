@@ -1,4 +1,5 @@
 <template>
+<div>
     <input-box/>
     <searchbar></searchbar>
     <messageThread></messageThread>
@@ -8,6 +9,8 @@
       <router-link to="/about">About</router-link>
     </div> -->
         <router-view />
+    <profile-container></profile-container>
+
     </div>
 </template>
 
@@ -29,7 +32,7 @@ export default {
 *:before,
 *:after {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0; 
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
