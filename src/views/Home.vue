@@ -1,24 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Team Orpheus"/>
-    <b-button class="button" variant="success">
+  <div class="home d-flex flex-column">
+    
+    <ThreadCalender />
+
+    <b-button class="button" variant="success" size="sm" pb="2">
         <img alt="button-send" src="../assets/Shape-send.png" />
         <b-icon icon="chevron-down" aria-hidden="true"></b-icon>
     </b-button>
-    
+    <ScheduleMessageModal />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-// import ScheduleMessage from '@/components/ScheduleMessage.vue'
+import ThreadCalender from '@/components/threadCalender.vue'
+import ScheduleMessageModal from '@/components/scheduleMessageModal.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    ThreadCalender,
+    ScheduleMessageModal
   }
 }
 </script>
+
+<style>
+
+</style>

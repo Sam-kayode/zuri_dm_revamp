@@ -1,12 +1,8 @@
-import { BootstrapVueIcons, BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
-Vue.use(BootstrapVue);
-Vue.use(BootstrapVueIcons);
-Vue.use(IconsPlugin);
 
 const routes = [
     {
