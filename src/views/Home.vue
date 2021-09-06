@@ -18,6 +18,9 @@
             <b-icon icon="chevron-down" aria-hidden="true"></b-icon>
         </b-button>
         <ScheduleMessageModal />
+        <SearchBar />
+        <InputBox />
+        <DmThreadActions />
     </div>
 </template>
 
@@ -27,6 +30,9 @@ import ThreadCalender from '@/components/threadCalender.vue';
 import ScheduleMessageModal from '@/components/scheduleMessageModal.vue';
 import ThreadReplySidebar from '@/components/threadReplySidebar.vue';
 import MessageInput from '@/components/messageInput.vue';
+import SearchBar from '@/components/searchBar.vue';
+import InputBox from '@/components/inputBox.vue';
+import DmThreadActions from '@/components/dmThreadActions.vue';
 
 export default {
     name: 'Home',
@@ -35,6 +41,9 @@ export default {
         ScheduleMessageModal,
         ThreadReplySidebar,
         MessageInput,
+        SearchBar,
+        InputBox,
+        DmThreadActions,
     },
 };
 </script>

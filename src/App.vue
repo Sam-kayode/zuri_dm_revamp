@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <input-box/>
-    <searchbar></searchbar>
+    <div id="app">
         <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -11,13 +9,7 @@
 </template>
 
 <script>
-import searchbar from './components/searchbar.vue'
-export default {
-  name: 'app',
-  components: {
-    searchbar
-  }
-}
+export default {};
 </script>
 
 <style>
