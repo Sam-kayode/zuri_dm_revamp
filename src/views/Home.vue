@@ -23,6 +23,7 @@
         <DmThreadActions />
         <ThreeDots />
         <DmMessageThread />
+        <ProfileContainer />
     </div>
 </template>
 
@@ -37,6 +38,7 @@ import InputBox from '@/components/inputBox.vue';
 import DmThreadActions from '@/components/dmThreadActions.vue';
 import ThreeDots from '@/components/ThreeDots.vue';
 import DmMessageThread from '@/components/messageThread.vue';
+import ProfileContainer from '@/components/profileContainer.vue'
 
 export default {
     name: 'Home',
@@ -50,6 +52,7 @@ export default {
         DmThreadActions,
         ThreeDots,
         DmMessageThread,
+        ProfileContainer
     },
 };
 </script>
