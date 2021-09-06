@@ -1,6 +1,3 @@
-
-import input from './components/inputBox.vue'
-
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
@@ -14,8 +11,6 @@ Vue.use(BootstrapVueIcons);
 Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false;
-
-Vue.component('input-box', input)
 
 new Vue({
     router,

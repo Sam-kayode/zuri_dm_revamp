@@ -1,31 +1,32 @@
 <template>
-  <main>
-    <h6 class="dm1">All direct messages</h6>
-    <div class="card-body">
-      <div class="form-group">
-        <input
-          type="email"
-          class="form-control"
-          placeholder="To:  @somebody or somebody@example.com"
-        />
-      </div>
+    <div>
+        <h6 class="dm1">All direct messages</h6>
+        <div class="card-body">
+            <div class="form-group">
+                <input
+                    type="email"
+                    class="form-control"
+                    placeholder="To:  @somebody or somebody@example.com"
+                />
+            </div>
+        </div>
     </div>
-  </main>
 </template>
 
 <script>
-export default {};
+export default {
+    name: 'MessageInput',
+};
 </script>
 
-<style>
-
+<style scoped>
 .form-control {
-  height: 50px;
-  background-color: white;
+    height: 50px;
+    background-color: white;
 }
 .dm1 {
-  margin-top: 30px;
-text-align: left;
-margin-left:20px
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 20px;
 }
 </style>
