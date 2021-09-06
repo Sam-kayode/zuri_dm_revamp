@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import searchbar from './components/searchbar.vue'
-import messageThread from './components/messageThread.vue'
+import searchbar from '@/components/searchBar.vue'
+import messageThread from '@/components/messageThread.vue'
 export default {
   name: 'app',
   components: {
