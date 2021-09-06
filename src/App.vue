@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <input-box/>
     <searchbar></searchbar>
         <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
