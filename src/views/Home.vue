@@ -1,35 +1,35 @@
 <template>
-  <div class="home d-flex flex-column">
-    <ThreadReply />
-    <ThreadCalender />
+    <div class="home d-flex flex-column">
+        <ThreadReply />
+        <ThreadCalender />
 
-    <b-button class="button" variant="success" size="sm" pb="2">
-        <img alt="button-send" src="../assets/Shape-send.png" />
-        <b-icon icon="chevron-down" aria-hidden="true"></b-icon>
-    </b-button>
-    <b-button class="button" v-b-toggle.sidebar variant="success" size="sm" pb="2">
-        <b-icon icon="reply" aria-hidden="true"></b-icon>
-    </b-button>
-    <ScheduleMessageModal />
-  </div>
+        <b-button
+            class="button"
+            v-b-toggle.sidebar
+            variant="success"
+            size="sm"
+            pb="2"
+        >
+            <b-icon icon="reply" aria-hidden="true"></b-icon>
+        </b-button>
+        <ScheduleMessageModal />
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ThreadCalender from '@/components/threadCalender.vue'
-import ScheduleMessageModal from '@/components/scheduleMessageModal.vue'
-import ThreadReply from '@/components/threadReply.vue'
+import ThreadCalender from '@/components/threadCalender.vue';
+import ScheduleMessageModal from '@/components/scheduleMessageModal.vue';
+import ThreadReply from '@/components/threadReply.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    ThreadCalender,
-    ScheduleMessageModal,
-    ThreadReply
-  }
-}
+    name: 'Home',
+    components: {
+        ThreadCalender,
+        ScheduleMessageModal,
+        ThreadReply,
+    },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
