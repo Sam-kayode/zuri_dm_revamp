@@ -75,7 +75,7 @@ export default {
 <style scoped>
 .parent {
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #3a3a3a;
   margin: 48px;
   margin-left: 200px;
