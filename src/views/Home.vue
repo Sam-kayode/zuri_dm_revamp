@@ -1,27 +1,35 @@
 <template>
-  <div class="home d-flex justify-content-center">
-    <img alt="Vue logo" src="../assets/logo.png">
-   
-    <thread_calender/>
-    <thread-actions></thread-actions>
+    <div class="home d-flex flex-column">
+        <ThreadReplySidebar />
+        <ThreadCalender />
 
-  </div>
+        <b-button
+            class="button"
+            v-b-toggle.sidebar
+            variant="success"
+            size="sm"
+            pb="2"
+        >
+            <b-icon icon="reply" aria-hidden="true"></b-icon>
+        </b-button>
+        <ScheduleMessageModal />
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import thread_calender from '@/components/threadCalender.vue'
-import threadActions from '../components/dmThreadActions.vue' 
+import ThreadCalender from '@/components/threadCalender.vue';
+import ScheduleMessageModal from '@/components/scheduleMessageModal.vue';
+import ThreadReplySidebar from '@/components/threadReplySidebar.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    thread_calender,
-    threadActions
-  }
-}
+    name: 'Home',
+    components: {
+        ThreadCalender,
+        ScheduleMessageModal,
+        ThreadReplySidebar,
+    },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
