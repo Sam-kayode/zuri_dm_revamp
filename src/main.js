@@ -14,8 +14,6 @@ Vue.use(BootstrapVueIcons);
 Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false;
-import profileContainer from './components/profileContainer.vue'
-Vue.component('profile-container', profileContainer);
 new Vue({
     router,
     store,
