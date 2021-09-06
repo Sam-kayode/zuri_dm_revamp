@@ -26,4 +26,6 @@ When contributing to the project, please follow these guidelines:
 6.  When creating a pull request on GitHub make sure you're push to **_Develop_** branch and not **_Main_** branch.
 7.  Once the pull request is merged, you can merge the branch into the develop branch.
 
+<hr>
+
 **_THANK YOU FOR READING THIS DOCUMENTATION._**
