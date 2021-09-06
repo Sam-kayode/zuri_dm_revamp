@@ -21,6 +21,8 @@
         <SearchBar />
         <InputBox />
         <DmThreadActions />
+        <ThreeDots />
+        <DmMessageThread />
     </div>
 </template>
 
@@ -33,6 +35,8 @@ import MessageInput from '@/components/messageInput.vue';
 import SearchBar from '@/components/searchBar.vue';
 import InputBox from '@/components/inputBox.vue';
 import DmThreadActions from '@/components/dmThreadActions.vue';
+import ThreeDots from '@/components/ThreeDots.vue';
+import DmMessageThread from '@/components/messageThread.vue';
 
 export default {
     name: 'Home',
@@ -44,8 +48,8 @@ export default {
         SearchBar,
         InputBox,
         DmThreadActions,
+        ThreeDots,
+        DmMessageThread,
     },
 };
 </script>
-
-<style></style>
