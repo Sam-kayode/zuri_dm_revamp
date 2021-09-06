@@ -12,6 +12,10 @@
         >
             <b-icon icon="reply" aria-hidden="true"></b-icon>
         </b-button>
+        <b-button class="button" variant="success" size="sm" pb="2">
+            <img alt="button-send" src="../assets/Shape-send.png" />
+            <b-icon icon="chevron-down" aria-hidden="true"></b-icon>
+        </b-button>
         <ScheduleMessageModal />
     </div>
 </template>
