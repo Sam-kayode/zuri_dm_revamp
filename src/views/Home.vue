@@ -1,5 +1,6 @@
 <template>
     <div class="home d-flex flex-column">
+        <MessageInput />
         <ThreadReplySidebar />
         <ThreadCalender />
 
@@ -21,6 +22,7 @@
 import ThreadCalender from '@/components/threadCalender.vue';
 import ScheduleMessageModal from '@/components/scheduleMessageModal.vue';
 import ThreadReplySidebar from '@/components/threadReplySidebar.vue';
+import MessageInput from '@/components/messageInput.vue';
 
 export default {
     name: 'Home',
@@ -28,6 +30,7 @@ export default {
         ThreadCalender,
         ScheduleMessageModal,
         ThreadReplySidebar,
+        MessageInput,
     },
 };
 </script>
