@@ -2,6 +2,8 @@
   <div id="app">
     <input-box/>
     <searchbar></searchbar>
+    <messageThread></messageThread>
+    
         <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -12,10 +14,12 @@
 
 <script>
 import searchbar from './components/searchbar.vue'
+import messageThread from './components/messageThread.vue'
 export default {
   name: 'app',
   components: {
-    searchbar
+    searchbar,
+    messageThread
   }
 }
 </script>
