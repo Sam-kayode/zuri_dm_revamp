@@ -1,15 +1,11 @@
 <template>
-<div>
-    <input-box/>
+<div class="app">
+
+    <!-- <input-box/>
     <searchbar></searchbar>
     <messageThread></messageThread>
-    
-        <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+     -->
         <router-view />
-    <profile-container></profile-container>
 
     </div>
 </template>
@@ -44,4 +40,7 @@ li {
 a {
     text-decoration: none;
 }
+.app {
+    min-height: 100vh;
+    }
 </style>

@@ -86,10 +86,12 @@ export default {
        background-color:#00B87C;
     }
     .userContainer{
-        position:absolute;
+        position:relative;
         width:18rem;
         min-height: 100vh;
         font-family:'Lato', sans-serif;
+        grid-column-start:2;
+    grid-column-end: 5;
     }
     
     .userContainer img{
