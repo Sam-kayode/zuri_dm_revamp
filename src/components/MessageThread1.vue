@@ -116,8 +116,7 @@ export default {
     font-size: 16px;
     box-sizing: border-box;
     background-color: whitesmoke;
-    height: 50px;
-    overflow-y: scroll;
+    
 }
 
 .msgBody {
