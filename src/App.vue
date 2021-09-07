@@ -1,29 +1,17 @@
 <template>
-<div>
-    <input-box/>
-    <searchbar></searchbar>
-    <messageThread></messageThread>
-    
+    <div id="app">
         <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
         <router-view />
-    <profile-container></profile-container>
-
     </div>
 </template>
 
 <script>
-import searchbar from '@/components/searchBar.vue'
-import messageThread from '@/components/messageThread.vue'
 export default {
-  name: 'app',
-  components: {
-    searchbar,
-    messageThread
-  }
-}
+    name: 'App',
+};
 </script>
 
 <style>
@@ -32,7 +20,7 @@ export default {
 *:before,
 *:after {
     box-sizing: border-box;
-    padding: 0; 
+    padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -43,5 +31,24 @@ li {
 
 a {
     text-decoration: none;
+}
+
+div,
+main,
+article,
+section,
+header,
+nav,
+footer,
+aside {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#app {
+    overflow: hidden;
 }
 </style>
