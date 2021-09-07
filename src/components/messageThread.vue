@@ -1,13 +1,15 @@
 <template>
-    <div class="thread">
+    <div class="message-thread mt-4">
         <div class="msgBody">
-            <div class="messages currentMessage">
-                <img src="../assets/Ellipse 21.png" alt="User Image" />
-                <div class="userText">
-                    <p>
+            <div class="conversation-threads d-flex flex-row">
+                <div class="userProfile-avatar">
+                    <img src="../assets/Ellipse 21.png" alt="User Image" />
+                </div>
+                <div class="usertext-messages">
+                    <h5 class="pb-2">
                         <span class="userName">MamaGee</span>
                         <span class="msgTime">5.55pm</span>
-                    </p>
+                    </h5>
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
@@ -19,13 +21,15 @@
                 </div>
             </div>
 
-            <div class="messages currentMessage">
-                <img src="../assets/Ellipse 24.png" alt="User Image" />
-                <div class="userText">
-                    <p>
+            <div class="conversation-threads d-flex flex-row">
+                <div class="userProfile-avatar">
+                    <img src="../assets/Ellipse 24.png" alt="User Image" />
+                </div>
+                <div class="usertext-messages">
+                    <h5 class="pb-2">
                         <span class="userName">Geegee</span>
                         <span class="msgTime">5.57pm</span>
-                    </p>
+                    </h5>
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
@@ -37,13 +41,15 @@
                 </div>
             </div>
 
-            <div class="messages currentMessage">
-                <img src="../assets/Ellipse 21.png" alt="User Image" />
-                <div class="userText">
-                    <p>
+            <div class="conversation-threads d-flex flex-row">
+                <div class="userProfile-avatar">
+                    <img src="../assets/Ellipse 21.png" alt="User Image" />
+                </div>
+                <div class="usertext-messages">
+                    <h5 class="pb-2">
                         <span class="userName">MamaGee</span>
                         <span class="msgTime">6.05pm</span>
-                    </p>
+                    </h5>
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
@@ -55,13 +61,15 @@
                 </div>
             </div>
 
-            <div class="messages newMessage">
-                <img src="../assets/Ellipse 21.png" alt="User Image" />
-                <div class="userText">
-                    <p>
+            <div class="conversation-threads d-flex flex-row">
+                <div class="userProfile-avatar">
+                    <img src="../assets/Ellipse 21.png" alt="User Image" />
+                </div>
+                <div class="usertext-messages">
+                    <h5 class="pb-2">
                         <span class="userName">MamaGee</span>
                         <span class="msgTime">5.55pm</span>
-                    </p>
+                    </h5>
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
@@ -73,13 +81,15 @@
                 </div>
             </div>
 
-            <div class="messages newMessages">
-                <img src="../assets/Ellipse 24.png" alt="User Image" />
-                <div class="userText">
-                    <p>
+            <div class="conversation-threads d-flex flex-row">
+                <div class="userProfile-avatar">
+                    <img src="../assets/Ellipse 24.png" alt="User Image" />
+                </div>
+                <div class="usertext-messages">
+                    <h5 class="pb-2">
                         <span class="userName">GeeGee</span>
                         <span class="msgTime">5.57pm</span>
-                    </p>
+                    </h5>
                     <p class="text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum mollitia aspernatur laboriosam cum officiis
@@ -97,64 +107,41 @@
 <script>
 export default {
     name: 'DmMesssageThread',
-    data() {
-        return {
-            width: window.innerWidth,
-        };
-    },
 };
 </script>
 
 <style scoped>
-.thread {
-    text-align: left;
-    border: thin solid none;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    margin: 0px;
-    font-size: 16px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: whitesmoke;
+.conversation-threads {
+    margin-bottom: 32px;
 }
 
-.msgBody {
-    padding-top: 50px;
+.userProfile-avatar {
+    padding-right: 16px;
 }
-.messages {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px 30px;
+
+.userProfile-avatar img {
+    vertical-align: middle;
 }
-.messages img {
-    width: 100px;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-.userText {
-    margin-left: 10px;
-    text-align: left;
-    line-height: 1.5;
-}
-.userText p {
-    margin: 10px 0px;
-}
-.userName {
-    font-weight: 900;
-    font-size: 18px;
-}
-.msgTime {
-    margin-left: 10px;
-    font-weight: 150;
+
+.usertext-messages {
     font-size: 14px;
+    line-height: 1.8;
 }
 
-.thread input {
-    margin: 0px 15px;
+.usertext-messages h5 {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
 }
-.thread > p {
-    display: inline-block;
+
+.usertext-messages span.msgTime {
+    padding-left: 8px;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+}
+
+.usertext-messages p {
+    margin-bottom: 0;
 }
 </style>

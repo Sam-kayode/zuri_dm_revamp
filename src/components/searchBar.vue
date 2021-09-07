@@ -57,6 +57,7 @@ export default {
     height: 3.35px;
     padding: 0.25em;
     border-radius: 4px;
+    background: transparent;
 }
 
 .profile-img {

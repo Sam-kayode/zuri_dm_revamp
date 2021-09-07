@@ -30,4 +30,23 @@ li {
 a {
     text-decoration: none;
 }
+
+div,
+main,
+article,
+section,
+header,
+nav,
+footer,
+aside {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#app {
+    overflow: hidden;
+}
 </style>
