@@ -33,7 +33,6 @@
                 </div>
             </b-col>
         </b-row>
-    </div>
 </template>
 
 <script>
