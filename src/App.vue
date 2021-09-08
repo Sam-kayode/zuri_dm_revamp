@@ -1,17 +1,25 @@
 <template>
-    <div id="app">
-        <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+<div class="app">
+
+    <!-- <input-box/>
+    <searchbar></searchbar>
+    <messageThread></messageThread>
+     -->
         <router-view />
+
     </div>
 </template>
 
 <script>
+import searchbar from '@/components/searchBar.vue'
+import messageThread from '@/components/messageThread.vue'
 export default {
-    name: 'App',
-};
+  name: 'app',
+  components: {
+    searchbar,
+    messageThread
+  }
+}
 </script>
 
 <style>
@@ -20,7 +28,7 @@ export default {
 *:before,
 *:after {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0; 
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -32,23 +40,7 @@ li {
 a {
     text-decoration: none;
 }
-
-div,
-main,
-article,
-section,
-header,
-nav,
-footer,
-aside {
-    display: block;
-}
-
-img {
-    vertical-align: middle;
-}
-
-#app {
-    overflow: hidden;
-}
+.app {
+    min-height: 100vh;
+    }
 </style>
