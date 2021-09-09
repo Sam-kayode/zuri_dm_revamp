@@ -1,16 +1,22 @@
 <template>
     <div id="app">
-        <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+        <!-- <input-box/>
+    <searchbar></searchbar>
+    <messageThread></messageThread>
+     -->
         <router-view />
     </div>
 </template>
 
 <script>
+import searchbar from '@/components/searchBar.vue';
+import messageThread from '@/components/messageThread.vue';
 export default {
-    name: 'App',
+    name: 'app',
+    components: {
+        searchbar,
+        messageThread,
+    },
 };
 </script>
 
@@ -31,21 +37,6 @@ li {
 
 a {
     text-decoration: none;
-}
-
-div,
-main,
-article,
-section,
-header,
-nav,
-footer,
-aside {
-    display: block;
-}
-
-img {
-    vertical-align: middle;
 }
 
 #app {
