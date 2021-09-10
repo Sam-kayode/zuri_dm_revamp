@@ -1,9 +1,9 @@
 <template>
-    <div class="message-thread mt-4">
+    <div class="message-thread mt-4 position-relative">
         <div
             @mouseover="hover = true"
             @mouseleave="hover = false"
-            class="msgBody position-relative"
+            class="msgBody"
         >
             <div class="conversation-threads d-flex flex-row">
                 <div class="userProfile-avatar">
@@ -61,7 +61,7 @@ export default {
 }
 
 .usertext-messages {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.8;
 }
 

@@ -31,7 +31,7 @@
                     <DmProfileHeader />
                 </div>
 
-                <div class="dm-plugin-contents">
+                <div class="dm-plugin-contents position-relative rounded-lg">
                     <DmPluginContents />
                 </div>
             </b-col>
@@ -59,6 +59,7 @@ export default {
 .hone .all-contents {
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .zurichat-sidebar {
@@ -73,10 +74,6 @@ export default {
 
 .user-profile-header {
     margin: 16px 0 26px;
-}
-
-dm-plugin-contents {
-    position: relative;
 }
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
