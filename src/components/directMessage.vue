@@ -14,31 +14,12 @@
                 <p class="mt-1 px-1">Direct messages</p>
             </div>
 
-      <b-icon-plus-circle class="d-flex mt-2"></b-icon-plus-circle>
-    </div>
-    <!-- Element to collapse -->
-    <b-collapse id="collapse-2">
-      <div
-        class="d-flex align-items-center direct-profiles position-relative"
-        v-for="profile in profiles"
-        :key="profiles.indexOf(profile)"
-      v-bind:class="{ active: profile.online }">
-        <div class="direct-avatar position-relative"
-        >
-          <img :src="require(`@/assets/${profile.avatar}`)" class="avatar" alt="" />
-          <div class="status position-absolute"></div>
-        </div>
-        <p class="m-0 px-2 username">{{ profile.username }}</p>
-        <b-icon icon="x" class="close position-absolute align-self-center" @click="deleteEntry(profiles.indexOf(profile))"></b-icon>
-      </div>
-    </b-collapse>
-  </div>
             <b-icon-plus-circle class="d-flex mt-2"></b-icon-plus-circle>
         </div>
         <!-- Element to collapse -->
         <b-collapse id="collapse-2">
             <div
-                class="d-flex align-items-center direct-profiles"
+                class="d-flex align-items-center direct-profiles position-relative"
                 v-for="profile in profiles"
                 :key="profiles.indexOf(profile)"
                 v-bind:class="{ active: profile.online }"
@@ -52,6 +33,11 @@
                     <div class="status position-absolute"></div>
                 </div>
                 <p class="m-0 px-2 username">{{ profile.username }}</p>
+                <b-icon
+                    icon="x"
+                    class="close position-absolute align-self-center"
+                    @click="deleteEntry(profiles.indexOf(profile))"
+                ></b-icon>
             </div>
         </b-collapse>
     </div>
@@ -59,41 +45,38 @@
 
 <script>
 export default {
-  data() {
-    return {
-      profiles: [
-        {
-          username: "MamaGee",
-          avatar: "Ellipse 21.png",
-          online: true,
+    data() {
+        return {
+            profiles: [
+                {
+                    username: 'MamaGee',
+                    avatar: 'Ellipse 21.png',
+                    online: true,
+                },
+                {
+                    username: 'David_B',
+                    avatar: 'Ellipse 24.png',
+                    online: false,
+                },
+                {
+                    username: 'Dre_Osibote',
+                    avatar: 'Ellipse 21.png',
+                    online: true,
+                },
+                {
+                    username: 'Ellah',
+                    avatar: 'Ellipse 24.png',
+                    online: false,
+                },
+            ],
+        };
+    },
+    methods: {
+        deleteEntry(val) {
+            this.profiles.splice(val, 1);
         },
-        {
-          username: "David_B",
-          avatar: "Ellipse 24.png",
-          online: false,
-        },
-        {
-          username: "Dre_Osibote",
-          avatar: "Ellipse 21.png",
-          online: true,
-        },
-        {
-          username: "Ellah",
-          avatar: "Ellipse 24.png",
-          online: false,
-        },
-      ],
-     
-    };
-  },
-   methods: {
-      deleteEntry(val){
-this.profiles.splice(val,1)
-      }
-   }
-}
+    },
 };
-
 </script>
 
 <style scoped>
@@ -152,14 +135,13 @@ button {
     color: rgba(0, 184, 124, 1);
 }
 
-.close{
-   right:2px !important;
-   font-size: 25px;
-   display:none;
-
+.close {
+    right: 2px !important;
+    font-size: 25px;
+    display: none;
 }
 
-.direct-profiles:hover > .close{
-    display:block;
+.direct-profiles:hover > .close {
+    display: block;
 }
 </style>
