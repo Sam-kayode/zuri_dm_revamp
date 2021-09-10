@@ -33,6 +33,12 @@ const routes = [
         name: 'Profile',
         component: () => 
         import('../views/SideProfileView.vue')
+    },
+    {
+        path: '/direct-message',
+        name: 'DirectMessage',
+        component: () => 
+        import('../views/directMessage.vue')
     }
 ];
 
