@@ -13,15 +13,17 @@
     <!-- Element to collapse -->
     <b-collapse id="collapse-2">
       <div
-        class="d-flex align-items-center direct-profiles"
+        class="d-flex align-items-center direct-profiles position-relative"
         v-for="profile in profiles"
         :key="profiles.indexOf(profile)"
       v-bind:class="{ active: profile.online }">
-        <div class="direct-avatar position-relative">
+        <div class="direct-avatar position-relative"
+        >
           <img :src="require(`@/assets/${profile.avatar}`)" class="avatar" alt="" />
           <div class="status position-absolute"></div>
         </div>
         <p class="m-0 px-2 username">{{ profile.username }}</p>
+        <b-icon icon="x" class="close position-absolute align-self-center" @click="deleteEntry(profiles.indexOf(profile))"></b-icon>
       </div>
     </b-collapse>
   </div>
@@ -53,9 +55,15 @@ export default {
           online: false,
         },
       ],
+     
     };
   },
-};
+   methods: {
+      deleteEntry(val){
+this.profiles.splice(val,1)
+      }
+   }
+}
 </script>
 
 <style scoped>
@@ -65,6 +73,7 @@ export default {
 .direct-profiles:hover{
     background-color: rgb(212, 212, 212) !important;
     cursor: pointer;
+    transition: 0.3s ease-out;
 }
 .direct-message svg {
   cursor: pointer;
@@ -110,5 +119,14 @@ color: rgba(0, 184, 124, 1);
 .active .username{
 color: rgba(0, 184, 124, 1);
 
+}
+.close{
+   right:2px !important;
+   font-size: 25px;
+   display:none;
+
+}
+.direct-profiles:hover > .close{
+    display:block;
 }
 </style>
